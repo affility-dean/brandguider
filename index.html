@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brand Guider</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</head>
+<body>
+  <div id="app">
+    <aside class="controls">
+      <h1>Brand Guider</h1>
+      <section>
+        <h2>Typography</h2>
+        <label>Font
+          <select id="fontSelect"></select>
+        </label>
+        <label>Weight
+          <input type="range" id="weightInput" min="100" max="900" step="100" value="400">
+        </label>
+        <div class="heading-style">
+          <span class="label">Heading style</span>
+          <div class="options">
+            <label><input type="radio" name="headingStyle" value="default" checked><span>Default</span></label>
+            <label><input type="radio" name="headingStyle" value="upper"><span>Uppercase</span></label>
+            <label><input type="radio" name="headingStyle" value="wide"><span>Wide</span></label>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Colours</h2>
+        <label>Primary
+          <input type="color" id="primaryColor" value="#0066ff">
+        </label>
+        <label>Secondary
+          <input type="color" id="secondaryColor" value="#ff6600">
+        </label>
+      </section>
+      <section>
+        <h2>Logo</h2>
+        <label class="file-upload">
+          <input type="file" id="logoInput" accept="image/*">
+          <span>Upload Logo</span>
+        </label>
+      </section>
+    </aside>
+    <main class="preview">
+      <img id="logoPreview" class="logo" alt="Logo preview">
+      <div class="logo-variations">
+        <div class="primary"><img id="logoPrimary" alt="Primary logo variation"></div>
+        <div class="secondary"><img id="logoSecondary" alt="Secondary logo variation"></div>
+      </div>
+      <h1 contenteditable="true">Heading 1</h1>
+      <h2 contenteditable="true">Heading 2</h2>
+      <p contenteditable="true">Sample paragraph text to preview your selections. Edit this text to try different content.</p>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
