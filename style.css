@@ -1,0 +1,109 @@
+:root {
+  --font-family: 'Roboto', sans-serif;
+  --font-weight: 400;
+  --primary-color: #0066ff;
+  --secondary-color: #ff6600;
+}
+
+body, html {
+  margin: 0;
+  height: 100%;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  background: #f5f5f5;
+  color: #333;
+}
+
+#app {
+  display: flex;
+  height: 100vh;
+}
+
+.controls {
+  width: 300px;
+  padding: 1rem;
+  background: #fff;
+  overflow-y: auto;
+  border-right: 1px solid #ddd;
+}
+
+.controls h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.controls section {
+  margin-bottom: 1.5rem;
+}
+
+.controls label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.controls input,
+.controls select {
+  width: 100%;
+  padding: 0.25rem;
+  margin-top: 0.25rem;
+}
+
+.preview {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow-y: auto;
+}
+
+.preview .logo {
+  max-width: 150px;
+  margin-bottom: 2rem;
+}
+
+.logo-variations {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.logo-variations div {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+}
+
+.logo-variations .primary {
+  background: var(--primary-color);
+}
+
+.logo-variations .secondary {
+  background: var(--secondary-color);
+}
+
+.logo-variations img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+[data-heading='upper'] h1,
+[data-heading='upper'] h2 {
+  text-transform: uppercase;
+}
+
+[data-heading='wide'] h1,
+[data-heading='wide'] h2 {
+  letter-spacing: 0.1em;
+}
+
+.preview h1 {
+  color: var(--primary-color);
+}
+
+.preview h2 {
+  color: var(--secondary-color);
+}
