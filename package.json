@@ -1,0 +1,8 @@
+{
+  "name": "brandguider",
+  "version": "1.0.0",
+  "description": "Tool to help brands build guidelines",
+  "scripts": {
+    "test": "echo \"No tests specified\""
+  }
+}
